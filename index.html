@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth class=">
+<html lang="en" class="scroll-smooth ">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phum Yerng</title>
   
-  <link href="/src/output.css" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
   <style type="text/tailwindcss">
     @theme {
       --font-display: 'Playfair Display', serif;
@@ -349,9 +349,7 @@
     </div>
   </footer>
 
-  <script>
-    
-    // Dark mode
+   <script>
     function toggleDark() {
       document.documentElement.classList.toggle('dark');
       const btn = document.getElementById('dark-toggle');
@@ -360,21 +358,16 @@
     }
     if (localStorage.getItem('theme') === 'dark') {
       document.documentElement.classList.add('dark');
-      const btn = document.getElementById('dark-toggle');
-      if (btn) btn.textContent = '☀️';
+      document.getElementById('dark-toggle').textContent = '☀️';
     }
 
-    // Mobile menu
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('open');
+    function filterMenu(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('#menu-grid [data-category]').forEach(card => {
+        card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+      });
     }
-
-    // Navbar scroll
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      if (window.scrollY > 50) nav.classList.add('scrolled', 'shadow-lg');
-      else nav.classList.remove('scrolled', 'shadow-lg');
-    });
   </script>
 </body>
 </html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>ABOUT OUR FOOD</title>
+  </head>
+  <!--dark mode -->
+  <body class="bg-[#f5eee8] dark:bg-gray-900 transition-colors duration-300">
+    <!-- nav -->
+    <div
+      class="bg-[#f5eee8] px-10 py-4 flex items-center justify-between shadow-sm"
+    >
+      <div class="text-3xl font-bold">
+        <span class="text-orange-400">Phum</span>
+        <span class="text-black">Yeung</span>
+      </div>
+
+      <nav
+        class="flex flex-wrap gap-4 text-xl font-semibold text-[rgb(105,55,39)] px-6 md:px-10 py-4"
+      >
+        <a href="/index.html" class="hover:text-[rgb(254,169,84)] transition">Home</a>
+        <a href="/menu.html" class="hover:text-[rgb(254,169,84)] transition">Menu</a>
+        <a href="/src/about.html" class="hover:text-[rgb(254,169,84)] transition">About</a>
+        <a href="/service.html" class="hover:text-[rgb(254,169,84)] transition">Services</a>
+        <a href="/src/contact.html" class="hover:text-[rgb(254,169,84)] transition">Contact</a>
+      </nav>
+    </div>
+    <!--dark mode toggle-->
+    <div class="flex justify-end mt-10 px-10">
+      <button
+        id="theme-toggle"
+        class="ml-auto mr-10 mt-4 p-3 border border-orange-400 rounded-full bg-black dark:bg-white transition duration-300"
+      >
+        <!-- SUN ICON -->
+
+        <svg
+          id="sun-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 text-orange-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+          />
+        </svg>
+
+        <!-- MOON ICON -->
+
+        <svg
+          id="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 text-white hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 12.79A9 9 0 1111.21 3 
+        7 7 0 0021 12.79z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- section -->
+    <div
+      class="max-w-6xl mx-auto px-10 py-20 grid md:grid-cols-2 gap-10 items-center"
+    >
+      <!-- image -->
+      <div>
+        <img
+          src="pasta.png"
+          alt="Food"
+          class="rounded-xl shadow-lg dark:shadow-gray-800"
+        />
+      </div>
+
+      <!-- paragrab -->
+      <div>
+        <p class="text-orange-400 font-semibold mb-2">About Our Food</p>
+
+        <h2 class="text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+          Fresh, Delicious, and Made with Passion
+        </h2>
+
+        <p class="text-gray-600 mb-6 leading-relaxed dark:text-gray-300">
+          Our food is proudly made in Cambodia, combining fresh local
+          ingredients with bold and delicious flavors. We focus on quality,
+          speed, and taste, ensuring every meal is prepared with care. As a
+          Khmer-owned business, we bring a unique touch to fast food by blending
+          local inspiration with modern style, giving you a satisfying
+          experience in every bite.
+        </p>
+
+        <!-- text -->
+        <div class="flex gap-8 mb-6">
+          <div>
+            <h3 class="text-2xl font-bold text-orange-400">100%</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">
+              Fresh Ingredients
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-orange-400">Fast</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Service</p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-orange-400">Khmer</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Owned</p>
+          </div>
+        </div>
+
+        <!-- button text -->
+        <button
+          class="bg-orange-400 text-white px-6 py-3 rounded hover:bg-white hover:text-orange-400 border border-orange-400 transition duration-300"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-black text-gray-300 px-10 py-12 mt-90">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+        <!-- brand -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">
+            <span class="text-orange-400">Phum</span> Yeung
+          </h2>
+          <p class="text-sm leading-relaxed">
+            Serving fresh and delicious fast food made in Cambodia. We bring
+            quality, flavor, and fast service to every customer.
+          </p>
+        </div>
+
+        <!-- link top -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Menu</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- contact -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Contact</h3>
+          <p class="text-sm mb-2">📍 Phnom Penh, Cambodia</p>
+          <p class="text-sm mb-2">📞 +855 12 345 678</p>
+          <p class="text-sm mb-4">✉️ info@phumyeung.com</p>
+
+          <!-- social -->
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-orange-400">Facebook</a>
+            <a href="#" class="hover:text-orange-400">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div
+        class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-6"
+      >
+        © 2026 Phum Yeung. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+      const sunIcon = document.getElementById("sun-icon");
+      const moonIcon = document.getElementById("moon-icon");
+
+      toggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+
+        sunIcon.classList.toggle("hidden");
+        moonIcon.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

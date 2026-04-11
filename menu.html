@@ -1,54 +1,84 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu — Phum Yerng</title>
-  <script src=""></script>
-  <link href="/output.css" rel="stylesheet">
-  <style>
-    body { font-family: 'Outfit', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .menu-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .menu-card:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(200,132,58,0.15); }
-    .filter-btn.active { background: #c8843a; color: white; border-color: #c8843a; }
-    #mobile-menu { transition: max-height 0.3s ease, opacity 0.3s ease; max-height: 0; opacity: 0; overflow: hidden; }
-    #mobile-menu.open { max-height: 300px; opacity: 1; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-[#fdf6ec] text-[#1a1a1a] dark:bg-[#111] dark:text-[#f5f0e8] transition-colors duration-300">
 
-  <!-- NAVBAR -->
-  <header class="bg-[#1a1a1a] text-white sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-bold" style="font-family:'Playfair Display',serif;">
-        <span style="color:#c8843a;">Phum</span> Yerng
-      </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="index.html" class="hover:text-[#c8843a] transition-colors">Home</a>
-        <a href="menu.html" class="text-[#c8843a] border-b border-[#c8843a] pb-0.5">Menu</a>
-        <a href="/about.html" class="hover:text-[#c8843a] transition-colors">About</a>
-        <a href="/service.html" class="hover:text-[#c8843a] transition-colors">Services</a>
-        <a href="/contact.html" class="hover:text-[#c8843a] transition-colors">Contact</a>
-        <button id="dark-toggle" onclick="toggleDark()" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors">🌙</button>
-      </nav>
-      <div class="flex items-center gap-3 md:hidden">
-        <button onclick="toggleDark()">🌙</button>
-        <button onclick="document.getElementById('mobile-menu').classList.toggle('open')">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
+    <body class="bg-[#f5eee8] dark:bg-gray-900 transition-colors duration-300 ">
+     
+      <!--sticky srolling nav-->
+
+      <div class="sticky top-0 z-50 bg-amber-50 dark:bg-gray-900">
+
+        <!-- nav bar -->
+    <div
+      class="  px-10 py-4 flex items-center justify-between shadow-sm ">
+      <div class="text-3xl font-bold">
+        <span class="text-orange-400">Phum</span>
+        <span class="text-black dark:text-amber-50">Yeung</span>
       </div>
-    </div>
-    <div id="mobile-menu" class="bg-[#1a1a1a] px-6 pb-4">
-      <a href="index.html" class="block py-2 hover:text-[#c8843a]">Home</a>
-      <a href="menu.html" class="block py-2 text-[#c8843a]">Menu</a>
-      <a href="/about.html" class="block py-2 hover:text-[#c8843a]">About</a>
-      <a href="/service.html" class="block py-2 hover:text-[#c8843a]">Services</a>
-      <a href="/contact.html" class="block py-2 hover:text-[#c8843a]">Contact</a>
-    </div>
-  </header>
 
-  <!-- PAGE HEADER -->
+      <div class="flex items-center gap-6 ">
+      <nav
+        class="flex flex-wrap gap-4 text-xl font-semibold text-[rgb(105,55,39)] px-6 md:px-10 py-4">
+        <a href="/index.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">Home</a>
+        <a href="/menu.html" class=" text-orange-400 hover:text-[rgb(254,169,84)] transition">Menu</a>
+        <a href="/about.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">About</a>
+        <a href="/service.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">Services</a>
+        <a href="/contact.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">Contact</a>
+        
+      </nav>
+
+      <button
+        id="theme-toggle"
+        class="ml-5 mr-1 mt-auto p-3 border border-orange-400 rounded-full bg-black dark:bg-white transition duration-300"
+      >
+        <!-- SUN ICON -->
+
+        <svg
+          id="sun-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 text-orange-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+          />
+        </svg>
+
+        <!-- MOON ICON -->
+
+        <svg
+          id="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 text-white hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 12.79A9 9 0 1111.21 3 
+        7 7 0 0021 12.79z"
+          />
+        </svg>
+      </button>
+    </div>
+    </div>
+      </div>
+
+      <!-- PAGE HEADER -->
   <section class="bg-[#1a1a1a] text-white py-20 px-6 text-center relative overflow-hidden">
     <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22><circle cx=%2230%22 cy=%2230%22 r=%221%22 fill=%22%23c8843a%22/></svg>');"></div>
     <div class="relative z-10">
@@ -59,13 +89,13 @@
   </section>
 
   <!-- FILTER TABS -->
-  <section class="py-8 px-6 border-b border-gray-200 dark:border-gray-800 sticky top-[72px] z-40 bg-[#fdf6ec] dark:bg-[#111]">
+  <section class="py-8 px-6 border-b border-gray-200 dark:border-gray-800 sticky top-18 z-40 bg-[#fdf6ec] dark:bg-[#111]">
     <div class="max-w-7xl mx-auto flex gap-3 overflow-x-auto pb-1 no-scrollbar">
-      <button class="filter-btn active whitespace-nowrap px-5 py-2 text-sm font-medium border border-[#c8843a] rounded-full transition-all" onclick="filterMenu('all', this)">All</button>
-      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('mains', this)">Mains</button>
-      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('rice', this)">Rice & Noodles</button>
-      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('soups', this)">Soups</button>
-      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('drinks', this)">Drinks</button>
+      <button class="filter-btn active whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-[#c8843a] rounded-full transition-all" onclick="filterMenu('all', this)">All</button>
+      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('mains', this)">Mains</button>
+      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('rice', this)">Rice & Noodles</button>
+      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('soups', this)">Soups</button>
+      <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('drinks', this)">Drinks</button>
     </div>
   </section>
 
@@ -81,7 +111,7 @@
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold">Herb Roast Chicken</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold">Herb Roast Chicken</h3>
             <span class="text-[#c8843a] font-bold text-lg">$20</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Whole chicken roasted with rosemary, Khmer spices, served with roasted potatoes.</p>
@@ -89,12 +119,12 @@
       </div>
 
       <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="mains">
-        <div class="h-52 bg-gradient-to-br from-amber-100 to-orange-200 dark:from-amber-900/30 dark:to-orange-900/30 flex items-center justify-center">
+        <div class="h-52 bg-linear-to-br flex items-center justify-center">
           <img src="/img/loklak.webp" alt="Lok Lak Beef" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold">Lok Lak Beef</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold">Lok Lak Beef</h3>
             <span class="text-[#c8843a] font-bold text-lg">$18</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Tender wok-tossed beef cubes in tangy black pepper sauce on a bed of rice.</p>
@@ -102,12 +132,12 @@
       </div>
 
       <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="mains">
-        <div class="h-52 bg-gradient-to-br from-yellow-100 to-amber-200 dark:from-yellow-900/30 dark:to-amber-900/30 flex items-center justify-center">
+        <div class="h-52 bg-linear-to-br  flex items-center justify-center">
           <img src="/img/amok.webp" alt="Amok Fish" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold">Amok Fish</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold">Amok Fish</h3>
             <span class="text-[#c8843a] font-bold text-lg">$16</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Cambodia's iconic steamed fish curry with coconut milk, lemongrass, and kaffir lime.</p>
@@ -121,7 +151,7 @@
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold"> Fried Rice</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold"> Fried Rice</h3>
             <span class="text-[#c8843a] font-bold text-lg">$12</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Smoky jasmine rice with pork, red peppers, scallions, and fresh cilantro.</p>
@@ -129,12 +159,12 @@
       </div>
 
       <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="rice">
-        <div class="h-52 bg-gradient-to-br from-lime-100 to-green-200 dark:from-lime-900/30 dark:to-green-900/30 flex items-center justify-center">
+        <div class="h-52 bg-linear-to-br  dark:to-green-900/30 flex items-center justify-center">
           <img src="/img/kuyteav.webp" alt="Kuy Teav Noodles" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold">Kuy Teav Noodles</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold">Kuy Teav Noodles</h3>
             <span class="text-[#c8843a] font-bold text-lg">$9</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Traditional Cambodian rice noodles in rich pork broth with bean sprouts and herbs.</p>
@@ -148,7 +178,7 @@
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold"> Noodle Soup</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold"> Noodle Soup</h3>
             <span class="text-[#c8843a] font-bold text-lg">$10</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Deep bone broth, ramen-style noodles, soft-boiled egg, and green onions.</p>
@@ -156,12 +186,12 @@
       </div>
 
       <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="soups">
-        <div class="h-52 bg-gradient-to-br from-orange-100 to-red-200 dark:from-orange-900/30 dark:to-red-900/30 flex items-center justify-center">
+        <div class="h-52 bg-linear-to-br  dark:to-red-900/30 flex items-center justify-center">
           <img src="/img/somlormachu.webp" alt="Samlar Machu Soup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold">Samlar Machu Soup</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold">Samlar Machu Soup</h3>
             <span class="text-[#c8843a] font-bold text-lg">$11</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Sour Khmer soup with tamarind, lemongrass, pineapple, and fresh seafood.</p>
@@ -170,12 +200,12 @@
 
       <!-- Drinks -->
       <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="drinks">
-        <div class="h-52 bg-gradient-to-br from-sky-100 to-blue-200 dark:from-sky-900/30 dark:to-blue-900/30 flex items-center justify-center">
+        <div class="h-52 bg-linear-to-br from-sky-100 to-blue-200 dark:from-sky-900/30 dark:to-blue-900/30 flex items-center justify-center">
           <img src="/img/sugercan.webp" alt="Fresh Sugar Cane Juice" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold">Fresh Sugar Cane Juice</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold">Fresh Sugar Cane Juice</h3>
             <span class="text-[#c8843a] font-bold text-lg">$3</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Freshly pressed sugarcane with a squeeze of lime — Cambodia's favorite refresher.</p>
@@ -183,12 +213,12 @@
       </div>
 
       <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="drinks">
-        <div class="h-52 bg-gradient-to-br from-amber-100 to-yellow-200 dark:from-amber-900/30 dark:to-yellow-900/30 flex items-center justify-center">
+        <div class="h-52 bg-linear-to-br  dark:to-yellow-900/30 flex items-center justify-center">
           <img src="/img/icecoffe.webp" alt="Iced Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-lg font-bold"> Iced Coffee</h3>
+            <h3 class="dark:text-amber-50 text-lg font-bold"> Iced Coffee</h3>
             <span class="text-[#c8843a] font-bold text-lg">$4</span>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">Strong Cambodian drip coffee over ice with sweetened condensed milk.</p>
@@ -198,30 +228,76 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-[#111] text-white py-8 px-6 text-center text-xs text-white/30">
-    © 2026 Phum Yerng. All rights reserved. Shareholders: Leav Vanny, Ban Sovannsetha, Dy Sorin, Khoun Sethapiseth, and Kun Sokea.
-  </footer>
+   <!-- footer -->
+
+    <footer class="bg-black text-gray-300 px-10 py-12 mt-auto">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+        <!-- brand -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">
+            <span class="text-orange-400">Phum</span> Yeung
+          </h2>
+          <p class="text-sm leading-relaxed">
+            Serving fresh and delicious fast food made in Cambodia. We bring
+            quality, flavor, and fast service to every customer.
+          </p>
+        </div>
+
+        <!-- link top -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Menu</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- contact -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Contact</h3>
+          <p class="text-sm mb-2">📍 Phnom Penh, Cambodia</p>
+          <p class="text-sm mb-2">📞 +855 12 345 678</p>
+          <p class="text-sm mb-4">✉️ info@phumyeung.com</p>
+
+          <!-- social -->
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-orange-400">Facebook</a>
+            <a href="#" class="hover:text-orange-400">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div
+        class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-6">
+        © 2026 Phum Yeung. All rights reserved.
+      </div>
+    </footer>
 
   <script>
-    function toggleDark() {
-      document.documentElement.classList.toggle('dark');
-      const btn = document.getElementById('dark-toggle');
-      btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
-      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-    }
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-      document.getElementById('dark-toggle').textContent = '☀️';
-    }
+      const toggleBtn = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+      const sunIcon = document.getElementById("sun-icon");
+      const moonIcon = document.getElementById("moon-icon");
 
-    function filterMenu(category, btn) {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelectorAll('#menu-grid [data-category]').forEach(card => {
-        card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+      toggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+
+        sunIcon.classList.toggle("hidden");
+        moonIcon.classList.toggle("hidden");
       });
-    }
-  </script>
+    </script>
+
+    
 </body>
 </html>

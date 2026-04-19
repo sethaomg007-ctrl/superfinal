@@ -12,17 +12,22 @@
 
       <div class="sticky top-0 z-50 bg-amber-50 dark:bg-gray-900">
 
-        <!-- nav bar -->
+        <!-- logo -->
     <div
-      class="  px-10 py-4 flex items-center justify-between shadow-sm ">
-      <div class="text-3xl font-bold">
-        <span class="text-orange-400">Phum</span>
-        <span class="text-black dark:text-amber-50">Yeung</span>
-      </div>
+      class="  px-6 py-3  flex flex-wrap items-center shadow-sm gap-3 justify-between">
 
-      <div class="flex items-center gap-6 ">
-      <nav
-        class="flex flex-wrap gap-4 text-xl font-semibold text-[rgb(105,55,39)] px-6 md:px-10 py-4">
+      <div class="text-xl sm:text-2xl md:text-3xl font-bold flex gap-1  justify-center flex-1">
+
+        <span class="text-orange-400">Phum</span>
+        
+        <span class="text-black dark:text-amber-50">Yeung</span>
+      
+      </div>
+      <!--right side nav-->
+      <div class="flex  items-center gap-3 sm:gap-5 flex-1 justify-center ">
+
+        <!--nav-->
+      <nav class="flex gap-3 text-sm sm:text-base md:text-lg font-semibold text-[rgb(105,55,39)] ">
         <a href="index.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">Home</a>
         <a href="menu.html" class=" text-orange-400 hover:text-[rgb(254,169,84)] transition">Menu</a>
         <a href="about.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">About</a>
@@ -91,7 +96,7 @@
     <div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <div class="text-white">
         <p class="fade-up text-[#c8843a] text-sm font-medium tracking-[0.3em] uppercase mb-4">Est. 2024 · Phnom Penh</p>
-        <h1 class="fade-up-2 text-5xl md:text-7xl font-black leading-tight mb-6" style="font-family:'Playfair Display',serif;">
+        <h1 class="fade-up-2 text-3xl sm:text-5xl md:text-7xl font-black leading-tight mb-6" style="font-family:'Playfair Display',serif;">
           Taste the<br><span style="color:#c8843a;">Soul</span> of<br>Cambodia
         </h1>
         <p class="fade-up-3 text-white/70 text-lg max-w-md mb-8 leading-relaxed">
@@ -108,7 +113,7 @@
       </div>
 
       <!-- Hero image stack -->
-      <div class="relative hidden md:block h-125">
+      <div class="relative hidden md:block h-100 lg:h-125">
         <div class="absolute top-0 right-8 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl rotate-3">
           <img src="./img/icecoffe.webp" alt="ice coffee" class="w-full h-full object-cover">
         </div>
@@ -129,7 +134,7 @@
 
   <!-- FEATURES STRIP -->
   <section class="bg-[#c8843a] py-6">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-white text-center">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-4 md:grid-cols-4 sm:grid-cols-4 gap-4 text-white text-center">
       <div class="flex flex-col items-center gap-1">
         <span class="text-2xl">🍽️</span>
         <span class="text-sm font-medium">Authentic Recipes</span>
@@ -151,12 +156,12 @@
 
    <!-- FEATURED MENU -->
   <section class="py-20 px-6">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-5xl mx-auto">
       <div class="text-center mb-14">
         <p class="deco-line text-[#c8843a] text-sm font-medium tracking-[0.3em] uppercase mb-3">What We Serve</p>
         <h2 class="dark:text-amber-50 text-4xl md:text-5xl font-bold" style="font-family:'Playfair Display',serif; ">Featured Dishes</h2>
       </div>
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
         <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow-lg">
           <div class="relative h-56 overflow-hidden">
@@ -205,7 +210,7 @@
         </div>
       </div>
       <div class="text-center mt-10">
-        <a href="menu.html" class="inline-block px-10 py-3 border-2 border-[#c8843a] text-[#c8843a] font-semibold rounded-full hover:bg-[#c8843a] hover:text-white transition-all">
+        <a href="menu.html" class="inline-block px-4 sm:px-6 md:px-10 py-3 border-2 border-[#c8843a] text-[#c8843a] font-semibold rounded-full hover:bg-[#c8843a] hover:text-white transition-all">
           View Full Menu
         </a>
       </div>
@@ -255,7 +260,7 @@
         <p class="deco-line text-[#c8843a] text-sm font-medium tracking-[0.3em] uppercase mb-3">Reviews</p>
         <h2 class="dark:text-amber-50 text-4xl font-bold" style="font-family:'Playfair Display',serif;">What Guests Say</h2>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3  gap-6">
         <div class="bg-white dark:bg-[#1e1e1e] rounded-2xl p-6 shadow-md">
           <div class="text-[#c8843a] flex gap-1 mb-4"><span class="star">★★★★★</span></div>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 italic">"The roast chicken here is unlike anything I've had. The spices are perfectly balanced — this is Cambodian cooking at its finest."</p>
@@ -293,10 +298,11 @@
       </a>
     </div>
   </section>
-   <!-- footer -->
+   
+  <!-- footer -->
 
     <footer class="bg-black text-gray-300 px-10 py-12 mt-auto">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-10">
         <!-- brand -->
         <div>
           <h2 class="text-xl font-bold mb-4">

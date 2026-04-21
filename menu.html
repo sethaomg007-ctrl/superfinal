@@ -15,16 +15,18 @@
 
         <!-- logo -->
     <div
-      class="  px-6 py-3  flex flex-wrap items-center shadow-sm gap-3 justify-between">
+      class="  px-6 py-3  flex flex-wrap items-center  gap-3">
 
-      <div class="text-xl sm:text-2xl md:text-3xl font-bold flex gap-1  justify-center flex-1">
+      <div class="text-xl md:text-3xl font-bold flex gap-1  justify-center flex-1">
 
         <span class="text-orange-400">Phum</span>
         
         <span class="text-black dark:text-amber-50">Yeung</span>
       
       </div>
+
       <!--right side nav-->
+
       <div class="flex  items-center gap-3 sm:gap-5 flex-1 justify-center ">
 
         <!--nav-->
@@ -84,7 +86,8 @@
     </div>
       </div>
 
-      <!-- PAGE HEADER -->
+      <!-- page header-->
+       
   <section class="bg-[#1a1a1a] text-white py-20 px-6 text-center relative overflow-hidden">
     <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22><circle cx=%2230%22 cy=%2230%22 r=%221%22 fill=%22%23c8843a%22/></svg>');"></div>
     <div class="relative z-10">
@@ -94,9 +97,9 @@
     </div>
   </section>
 
-  <!-- FILTER TABS -->
+  <!-- Filter tab-->
   <section class="py-8 px-6 border-b border-gray-200 dark:border-gray-800 sticky top-18 z-40 bg-[#fdf6ec] dark:bg-[#111]">
-    <div class="max-w-7xl mx-auto flex gap-3 overflow-x-auto pb-1 no-scrollbar">
+    <div class="max-w-7xl mx-auto flex gap-3 overflow-x-auto pb-1 no-scrollbar flex-wrap md:flex-nowrap">
       <button class="filter-btn active whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-[#c8843a] rounded-full transition-all" onclick="filterMenu('all', this)">All</button>
       <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('mains', this)">Mains</button>
       <button class="filter-btn whitespace-nowrap px-5 py-2 text-sm font-medium border dark:text-amber-50 border-gray-300 dark:border-gray-600 rounded-full hover:border-[#c8843a] hover:text-[#c8843a] transition-all" onclick="filterMenu('rice', this)">Rice & Noodles</button>
@@ -105,18 +108,24 @@
     </div>
   </section>
 
-  <!-- MENU GRID -->
-  <section class="py-16 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8" id="menu-grid">
+  <!-- Menu Grid -->
 
-      <!-- Mains -->
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="mains">
-        <div class="h-52 overflow-hidden relative">
+  <section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8" >
+
+      <!-- Mains Menu -->
+
+      <!-- Herb Roast Chicken -->
+
+      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52 relative">
           <img src="./img/Herb_Crusted_Roast_Chicken-close-580.webp" alt="Roast Chicken" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           <span class="absolute top-3 right-3 bg-[#c8843a] text-white text-xs font-bold px-3 py-1 rounded-full">Chef's Pick</span>
         </div>
+
+       <!-- Herb Roast Chicken text-->
         <div class="p-5">
-          <div class="flex justify-between items-start mb-2">
+          <div class="flex justify-between mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold">Herb Roast Chicken</h3>
             <span class="text-[#c8843a] font-bold text-lg">$20</span>
           </div>
@@ -124,12 +133,17 @@
         </div>
       </div>
 
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="mains">
-        <div class="h-52 bg-linear-to-br flex items-center justify-center">
+      <!--Lok Lak Beef-->
+
+      <div class="bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" >
+        <div class="h-52">
           <img src="./img/loklak.webp" alt="Lok Lak Beef" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
+        
+        <!--Lok Lak Beef text-->
+
         <div class="p-5">
-          <div class="flex justify-between items-start mb-2">
+          <div class="flex justify-between mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold">Lok Lak Beef</h3>
             <span class="text-[#c8843a] font-bold text-lg">$18</span>
           </div>
@@ -137,12 +151,17 @@
         </div>
       </div>
 
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="mains">
-        <div class="h-52 bg-linear-to-br  flex items-center justify-center">
+      <!--Amok Fish-->
+
+      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52">
           <img src="./img/amok.webp" alt="Amok Fish" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
+
+        <!--Amok Fish text-->
+        
         <div class="p-5">
-          <div class="flex justify-between items-start mb-2">
+          <div class="flex justify-between  mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold">Amok Fish</h3>
             <span class="text-[#c8843a] font-bold text-lg">$16</span>
           </div>
@@ -150,11 +169,14 @@
         </div>
       </div>
 
-      <!-- Rice & Noodles -->
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="rice">
-        <div class="h-52 overflow-hidden">
+      <!-- Fried Rice -->
+
+      <div class=" bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52">
           <img src="./img/fricerice.webp" alt="Fried Rice" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
+
+        <!-- Fried Rice text -->
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold"> Fried Rice</h3>
@@ -164,12 +186,17 @@
         </div>
       </div>
 
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="rice">
-        <div class="h-52 bg-linear-to-br  dark:to-green-900/30 flex items-center justify-center">
+      <!-- Kuy Teav Noodles -->
+
+      <div class=" bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52">
           <img src="./img/kuyteav.webp" alt="Kuy Teav Noodles" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
-          <div class="flex justify-between items-start mb-2">
+
+           <!-- Kuy Teav Noodles text -->
+            
+          <div class="flex justify-between mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold">Kuy Teav Noodles</h3>
             <span class="text-[#c8843a] font-bold text-lg">$9</span>
           </div>
@@ -177,13 +204,16 @@
         </div>
       </div>
 
-      <!-- Soups -->
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="soups">
-        <div class="h-52 overflow-hidden">
+      <!-- Noodle Soup -->
+      <div class=" bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52">
           <img src="./img/noodlesoup.webp" alt="Noodle Soup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
+
+          <!-- Noodle Soup text -->
+
         <div class="p-5">
-          <div class="flex justify-between items-start mb-2">
+          <div class="flex justify-between mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold"> Noodle Soup</h3>
             <span class="text-[#c8843a] font-bold text-lg">$10</span>
           </div>
@@ -191,8 +221,10 @@
         </div>
       </div>
 
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="soups">
-        <div class="h-52 bg-linear-to-br  dark:to-red-900/30 flex items-center justify-center">
+      <!--Samlar Machu Soup-->
+
+      <div class=" bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52">
           <img src="./img/somlormachu.webp" alt="Samlar Machu Soup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
         <div class="p-5">
@@ -204,11 +236,15 @@
         </div>
       </div>
 
-      <!-- Drinks -->
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="drinks">
-        <div class="h-52 bg-linear-to-br from-sky-100 to-blue-200 dark:from-sky-900/30 dark:to-blue-900/30 flex items-center justify-center">
+      <!-- Fresh Sugar Cane Juice -->
+
+      <div class=" bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52">
           <img src="./img/sugercan.webp" alt="Fresh Sugar Cane Juice" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
+
+         <!-- Fresh Sugar Cane Juice text-->
+
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold">Fresh Sugar Cane Juice</h3>
@@ -218,10 +254,15 @@
         </div>
       </div>
 
-      <div class="menu-card bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow" data-category="drinks">
-        <div class="h-52 bg-linear-to-br  dark:to-yellow-900/30 flex items-center justify-center">
+        <!-- Iced Coffee -->
+
+      <div class=" bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow">
+        <div class="h-52">
           <img src="./img/icecoffe.webp" alt="Iced Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
+
+        <!-- Iced Coffee text -->
+
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
             <h3 class="dark:text-amber-50 text-lg font-bold"> Iced Coffee</h3>

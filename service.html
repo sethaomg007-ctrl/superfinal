@@ -4,89 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
-    <link rel="stylesheet" href="./src/output.css"/>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body class="bg-white dark:bg-gray-900 transition-colors duration-300">
-   
     <!--sticky srolling nav-->
 
-      <div class="sticky top-0 z-50 bg-amber-50 dark:bg-gray-900">
-
-        <!-- logo -->
-    <div
-      class="  px-6 py-3  flex flex-wrap items-center shadow-sm gap-3 justify-between">
-
-      <div class="text-xl sm:text-2xl md:text-3xl font-bold flex gap-1  justify-center flex-1">
-
-        <span class="text-orange-400">Phum</span>
-        
-        <span class="text-black dark:text-amber-50">Yeung</span>
-      
-      </div>
-      <!--right side nav-->
-      <div class="flex  items-center gap-3 sm:gap-5 flex-1 justify-center ">
-
-        <!--nav-->
-      <nav class="flex gap-3 text-sm sm:text-base md:text-lg font-semibold text-[rgb(105,55,39)] ">
-        <a href="index.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">Home</a>
-        <a href="menu.html" class=" text-orange-400 hover:text-[rgb(254,169,84)] transition">Menu</a>
-        <a href="about.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">About</a>
-        <a href="service.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">Services</a>
-        <a href="contact.html" class="text-orange-400 hover:text-[rgb(254,169,84)] transition">Contact</a>
-        
-      </nav>
-
-      <button
-        id="theme-toggle"
-        class="ml-5 mr-1 mt-auto p-3 border border-orange-400 rounded-full bg-black dark:bg-white transition duration-300"
+    <div class="sticky top-0 z-50 bg-amber-50 dark:bg-gray-900">
+      <!-- logo -->
+      <div
+        class="px-6 py-3 flex flex-wrap items-center shadow-sm gap-3 justify-between"
       >
-        <!-- SUN ICON -->
-
-        <svg
-          id="sun-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5 text-orange-400"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+        <div
+          class="text-xl sm:text-2xl md:text-3xl font-bold flex gap-1 justify-center flex-1"
         >
-          <circle cx="12" cy="12" r="5" />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-          />
-        </svg>
+          <span class="text-orange-400">Phum</span>
 
-        <!-- MOON ICON -->
+          <span class="text-black dark:text-amber-50">Yeung</span>
+        </div>
+        <!--right side nav-->
+        <div class="flex items-center gap-3 sm:gap-5 flex-1 justify-center">
+          <!--nav-->
+          <nav
+            class="flex gap-3 text-sm sm:text-base md:text-lg font-semibold text-[rgb(105,55,39)]"
+          >
+            <a
+              href="index.html"
+              class="text-orange-400 hover:text-[rgb(254,169,84)] transition"
+              >Home</a
+            >
+            <a
+              href="menu.html"
+              class="text-orange-400 hover:text-[rgb(254,169,84)] transition"
+              >Menu</a
+            >
+            <a
+              href="about.html"
+              class="text-orange-400 hover:text-[rgb(254,169,84)] transition"
+              >About</a
+            >
+            <a
+              href="service.html"
+              class="text-orange-400 hover:text-[rgb(254,169,84)] transition"
+              >Services</a
+            >
+            <a
+              href="contact.html"
+              class="text-orange-400 hover:text-[rgb(254,169,84)] transition"
+              >Contact</a
+            >
+          </nav>
 
-        <svg
-          id="moon-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5 text-white hidden"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M21 12.79A9 9 0 1111.21 3 
+          <button
+            id="theme-toggle"
+            class="ml-5 mr-1 mt-auto p-3 border border-orange-400 rounded-full bg-black dark:bg-white transition duration-300"
+          >
+            <!-- SUN ICON -->
+
+            <svg
+              id="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 text-orange-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+
+            <!-- MOON ICON -->
+
+            <svg
+              id="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 text-white hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 12.79A9 9 0 1111.21 3 
         7 7 0 0021 12.79z"
-          />
-        </svg>
-      </button>
-    </div>
-    </div>
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-
+    </div>
 
     <!-- Service -->
 
     <div class="max-w-6xl mx-auto px-6 py-16">
-
       <!-- TITLE -->
 
       <div class="mb-12 flex flex-col items-center text-center">
@@ -107,7 +127,11 @@
         <div
           class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
         >
-          <div class="text-3xl mb-4">🍽️</div>
+          <div
+            class="mb-4 w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-400/20 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-utensils text-orange-400 text-xl"></i>
+          </div>
 
           <h3 class="text-xl font-bold mb-3 text-orange-400">
             Dine-In Service
@@ -121,10 +145,13 @@
 
         <!-- Card 2 -->
         <div
-
-          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-
-          <div class="text-3xl mb-4">🚚</div>
+          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+        >
+          <div
+            class="mb-4 w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-400/20 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-truck-fast text-orange-400 text-xl"></i>
+          </div>
 
           <h3 class="text-xl font-bold mb-3 text-orange-400">
             Takeaway & Delivery
@@ -138,8 +165,15 @@
 
         <!-- Card 3 -->
         <div
-          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-          <div class="text-3xl mb-4">🎉</div>
+          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+        >
+          <div
+            class="mb-4 w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-400/20 flex items-center justify-center"
+          >
+            <i
+              class="fa-solid fa-champagne-glasses text-orange-400 text-xl"
+            ></i>
+          </div>
 
           <h3 class="text-xl font-bold mb-3 text-orange-400">
             Event & Catering
@@ -158,8 +192,13 @@
       <div class="grid md:grid-cols-3 gap-10">
         <!-- Card 4 -->
         <div
-          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-          <div class="text-3xl mb-4">🍔</div>
+          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+        >
+          <div
+            class="mb-4 w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-400/20 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-sliders text-orange-400 text-xl"></i>
+          </div>
 
           <h3 class="text-xl font-bold mb-3 text-orange-400">
             Custom Meal Plans
@@ -173,9 +212,13 @@
 
         <!-- Card 5 -->
         <div
-          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-          <div class="0 text-3xl mb-4">👨‍🍳</div>
-
+          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+        >
+          <div
+            class="mb-4 w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-400/20 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-bowl-food text-orange-400 text-xl"></i>
+          </div>
           <h3 class="text-xl font-bold mb-3 text-orange-400">
             Chef Special Menu
           </h3>
@@ -188,8 +231,13 @@
 
         <!-- Card 6 -->
         <div
-          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-          <div class="text-3xl mb-4">🎁</div>
+          class="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+        >
+          <div
+            class="mb-4 w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-400/20 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-tag text-orange-400 text-xl"></i>
+          </div>
 
           <h3 class="text-xl font-bold mb-3 text-orange-400">
             Special Offers & Combos
@@ -262,7 +310,8 @@
 
       <!-- bottom -->
       <div
-        class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-6">
+        class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-6"
+      >
         © 2026 Phum Yeung. All rights reserved.
       </div>
     </footer>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-[#f5eee8] dark:bg-gray-900 transition-colors duration-300 ">
      
@@ -148,6 +149,49 @@
       </div>
     </div>
   </section>
+
+  <!-- Gallery  -->
+<section class="py-20 px-6 bg-[#f5eee8] dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="text-[#c8843a] text-sm font-medium tracking-[0.3em] uppercase mb-3">Our Kitchen</p>
+      <h2 class="dark:text-amber-50 text-4xl md:text-5xl font-bold font-['Playfair_Display']">A Feast for the Eyes</h2>
+      <p class="text-gray-500 dark:text-gray-400 mt-4 max-w-md mx-auto text-sm leading-relaxed">
+        Every dish is crafted with care — here's a glimpse of what awaits you at Phum Yeung.
+      </p>
+    </div>
+ 
+    <!-- Photo grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+ 
+      <!-- Large left image -->
+      <div class="col-span-2 row-span-2 rounded-3xl overflow-hidden h-72 md:h-auto">
+        <img src="./img/amok.webp" alt="Fish Amok" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+ 
+      <!-- Top right 1 -->
+      <div class="rounded-3xl overflow-hidden h-36 md:h-44">
+        <img src="./img/icecoffe.webp" alt="Ice Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+ 
+      <!-- Top right 2 -->
+      <div class="rounded-3xl overflow-hidden h-36 md:h-44">
+        <img src="./img/fricerice.webp" alt="Fried Rice" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+ 
+      <!-- Bottom right 1 -->
+      <div class="rounded-3xl overflow-hidden h-36 md:h-44">
+        <img src="./img/noodlesoup.webp" alt="Noodle Soup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+ 
+      <!-- Bottom right 2  -->
+      <div class="rounded-3xl overflow-hidden h-36 md:h-44">
+        <img src="./img/kuyteav.webp" alt="Noodle Soup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+ 
+    </div>
+  </div>
+</section>
 
    <!-- Featured menu -->
   <section class="py-20 px-6">
@@ -295,6 +339,154 @@
       </div>
     </div>
   </section>
+
+  <!-- Opening Hours and Location -->
+<section class="py-20 px-6 bg-[#f5eee8] dark:bg-gray-900">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+ 
+    <!-- Hours -->
+    <div>
+      <p class="text-[#c8843a] text-sm font-medium tracking-[0.3em] uppercase mb-3">Visit Us</p>
+      <h2 class="dark:text-amber-50 text-4xl font-bold font-['Playfair_Display'] mb-8">Opening Hours</h2>
+ 
+      <div class="space-y-4">
+ 
+        <!-- Row -->
+        <div class="flex justify-between items-center border-b border-gray-200 dark:border-gray-700 pb-3">
+          <span class="dark:text-amber-50 font-medium">Monday – Friday</span>
+          <span class="text-[#c8843a] font-semibold">10:00 AM – 10:00 PM</span>
+        </div>
+ 
+        <div class="flex justify-between items-center border-b border-gray-200 dark:border-gray-700 pb-3">
+          <span class="dark:text-amber-50 font-medium">Saturday</span>
+          <span class="text-[#c8843a] font-semibold">9:00 AM – 11:00 PM</span>
+        </div>
+ 
+        <div class="flex justify-between items-center border-b border-gray-200 dark:border-gray-700 pb-3">
+          <span class="dark:text-amber-50 font-medium">Sunday</span>
+          <span class="text-[#c8843a] font-semibold">9:00 AM – 9:00 PM</span>
+        </div>
+      </div>
+ 
+      <!-- Status badge -->
+      <div class="mt-6 inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 px-4 py-2 rounded-full text-sm font-semibold">
+        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse inline-block"></span>
+        We're Open Now
+      </div>
+    </div>
+ 
+    <!-- Location card -->
+    <div class="bg-white dark:bg-[#1e1e1e] rounded-3xl overflow-hidden shadow-lg">
+ 
+      <!-- Map placeholder (styled box) -->
+      <div class="h-48">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0!2d104.9282!3d11.5564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sBoeung%20Keng%20Kang%2C%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1700000000000"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Phum Yeung Location"
+  ></iframe>
+</div>
+ 
+      <!-- Address details -->
+      <div class="p-6 space-y-3">
+        <div class="flex items-start gap-3">
+          <span class="text-lg">📍</span>
+          <div>
+            <p class="dark:text-amber-50 font-semibold text-sm">Address</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">123 Norodom Blvd, Phnom Penh, Cambodia</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-lg">📞</span>
+          <div>
+            <p class="dark:text-amber-50 font-semibold text-sm">Phone</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">+855 12 345 678</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-lg">✉️</span>
+          <div>
+            <p class="dark:text-amber-50 font-semibold text-sm">Email</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">info@phumyeung.com</p>
+          </div>
+        </div>
+        <a
+          href="https://maps.google.com"
+          target="_blank"
+          class="mt-2 inline-block w-full text-center py-2 border border-[#c8843a] text-[#c8843a] font-semibold rounded-full text-sm hover:bg-[#c8843a] hover:text-white transition-all"
+        >
+          Get Directions →
+        </a>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-20 px-6 bg-[#1a1a1a] text-white">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="text-[#c8843a] text-sm font-medium tracking-[0.3em] uppercase mb-3">Simple & Easy</p>
+      <h2 class="text-4xl md:text-5xl font-bold font-['Playfair_Display']">How to Dine With Us</h2>
+    </div>
+ 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+ 
+      <!-- Connector line -->
+      <div class="hidden md:block absolute top-10 left-1/6 right-1/6 h-px bg-[#c8843a]/30"></div>
+ 
+      <!-- Reserve a Table -->
+      <div class="flex flex-col items-center text-center gap-4">
+        <div class="w-20 h-20 rounded-full bg-[#c8843a]/15 border border-[#c8843a]/40 flex items-center justify-center text-3xl relative">
+          <i class="fa-regular fa-calendar text-[#c8843a] text-2xl"></i>
+
+          <span class="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#c8843a] text-white text-xs font-bold flex items-center justify-center">1</span>
+        </div>
+        <h3 class="text-xl font-bold font-['Playfair_Display']">Reserve a Table</h3>
+        <p class="text-white/60 text-sm leading-relaxed">
+          Book online or call us. We'll confirm your spot and any special requests in minutes.
+        </p>
+        <a href="contact.html" class="text-[#c8843a] text-sm font-medium hover:underline">Book now →</a>
+      </div>
+ 
+      <!-- Come & Be Seated -->
+      <div class="flex flex-col items-center text-center gap-4">
+        <div class="w-20 h-20 rounded-full bg-[#c8843a]/15 border border-[#c8843a]/40 flex items-center justify-center text-3xl relative">
+          <i class="fa-solid fa-person-walking text-[#c8843a] text-2xl"></i>
+
+          <span class="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#c8843a] text-white text-xs font-bold flex items-center justify-center">2</span>
+        </div>
+        <h3 class="text-xl font-bold font-['Playfair_Display']">Come & Be Seated</h3>
+        <p class="text-white/60 text-sm leading-relaxed">
+          Arrive at Phum Yeung and our team will welcome you into a warm, cozy atmosphere.
+        </p>
+      </div>
+ 
+      <!-- Enjoy Your Meal -->
+      <div class="flex flex-col items-center text-center gap-4">
+        <div class="w-20 h-20 rounded-full bg-[#c8843a]/15 border border-[#c8843a]/40 flex items-center justify-center text-3xl relative">
+          <i class="fa-solid fa-utensils text-[#c8843a] text-2xl"></i>
+
+          <span class="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#c8843a] text-white text-xs font-bold flex items-center justify-center">3</span>
+        </div>
+        <h3 class="text-xl font-bold font-['Playfair_Display']">Enjoy Your Meal</h3>
+        <p class="text-white/60 text-sm leading-relaxed">
+          Savour authentic Cambodian flavours crafted fresh by our expert chefs, just for you.
+        </p>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+  
+
+  
 
   <!-- Banner -->
 
